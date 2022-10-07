@@ -1,0 +1,22 @@
+INFO	2022/10/06 14:45:23 LOGLOGLOGLOGLOG
+INFO	2022/10/06 14:50:13 LOGLOGLOGLOGLOG
+INFO	2022/10/06 16:07:42 LOGLOGLOGLOGLOG
+INFO	2022/10/06 16:08:10 hello from handlers
+INFO	2022/10/06 16:08:37 Display a specific snippet with ID 2...
+ERROR	2022/10/06 16:08:47 hanlders.go:37: Method now allowed
+INFO	2022/10/06 16:11:04 LOGLOGLOGLOGLOG
+INFO	2022/10/06 16:11:16 hello from handlers
+INFO	2022/10/06 16:13:02 LOGLOGLOGLOGLOG
+INFO	2022/10/06 16:13:15 hello from handlers
+ERROR	2022/10/06 16:13:15 hanlders.go:19: open ./ui/html/pages/home.tmpl: The system cannot find the file specified.
+ERROR	2022/10/07 13:34:46 main.go:50: sql: unknown driver "mysql" (forgotten import?)
+ERROR	2022/10/07 13:34:59 main.go:50: sql: unknown driver "mysql" (forgotten import?)
+ERROR	2022/10/07 13:45:25 main.go:50: sql: unknown driver "mysql" (forgotten import?)
+ERROR	2022/10/07 13:46:30 main.go:50: sql: unknown driver "mysql" (forgotten import?)
+ERROR	2022/10/07 14:21:59 main.go:51: default addr for network 'web:web' unknown
+ERROR	2022/10/07 14:28:40 main.go:51: default addr for network 'localhost:web' unknown
+ERROR	2022/10/07 14:29:06 main.go:51: default addr for network 'localhost:admin' unknown
+ERROR	2022/10/07 15:09:10 main.go:51: default addr for network 'web:admin' unknown
+INFO	2022/10/07 15:19:15 LOGLOGLOGLOGLOG
+ERROR	2022/10/07 15:20:41 main.go:51: Error 1045: Access denied for user 'web'@'localhost' (using password: YES)
+INFO	2022/10/07 15:21:05 LOGLOGLOGLOGLOG
