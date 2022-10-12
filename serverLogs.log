@@ -20,3 +20,710 @@ ERROR	2022/10/07 15:09:10 main.go:51: default addr for network 'web:admin' unkno
 INFO	2022/10/07 15:19:15 LOGLOGLOGLOGLOG
 ERROR	2022/10/07 15:20:41 main.go:51: Error 1045: Access denied for user 'web'@'localhost' (using password: YES)
 INFO	2022/10/07 15:21:05 LOGLOGLOGLOGLOG
+INFO	2022/10/07 15:28:00 LOGLOGLOGLOGLOG
+INFO	2022/10/07 15:50:09 LOGLOGLOGLOGLOG
+INFO	2022/10/07 16:16:04 LOGLOGLOGLOGLOG
+INFO	2022/10/07 16:16:18 hello from handlers
+ERROR	2022/10/07 16:16:18 helpers.go:13: open ./ui/html/pages/home.tmpl: The system cannot find the file specified.
+goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc00009c000, {0x1148590, 0xc0000d6000}, {0x1146080?, 0xc0000943f0?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:12 +0x66
+main.(*application).Home(0xc00009c000, {0x1148590?, 0xc0000d6000}, 0xe25890?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:19 +0x1fa
+net/http.HandlerFunc.ServeHTTP(0xc00006faf0?, {0x1148590?, 0xc0000d6000?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1148590, 0xc0000d6000}, 0xc00014a000)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000077230?}, {0x1148590, 0xc0000d6000}, 0xc00014a000)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000980a0, {0x1148a00, 0xc0000941e0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+ERROR	2022/10/07 16:16:29 helpers.go:21: Method not allowed
+INFO	2022/10/07 16:17:15 LOGLOGLOGLOGLOG
+ERROR	2022/10/07 16:17:21 helpers.go:21: Method not allowed
+ERROR	2022/10/07 16:17:40 helpers.go:21: Method not allowed
+INFO	2022/10/07 17:37:14 LOGLOGLOGLOGLOG
+ERROR	2022/10/07 17:37:40 hanlders.go:55: Error id is not valid
+ERROR	2022/10/07 17:37:44 hanlders.go:55: Error id is not valid
+INFO	2022/10/07 17:37:47 Display a specific snippet with ID 1...
+INFO	2022/10/07 17:38:07 Display a specific snippet with ID 88...
+INFO	2022/10/07 17:38:15 Display a specific snippet with ID 88...
+INFO	2022/10/07 17:38:20 Display a specific snippet with ID 2...
+INFO	2022/10/07 17:38:43 LOGLOGLOGLOGLOG
+INFO	2022/10/07 17:38:51 Display a specific snippet with ID 2...
+ERROR	2022/10/07 17:38:56 helpers.go:21: 
+INFO	2022/10/07 23:40:21 LOGLOGLOGLOGLOG
+ERROR	2022/10/07 23:40:33 helpers.go:13: sql: expected 3 destination arguments in Scan, not 5
+goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc000190078, {0x1284a00, 0xc00015e000}, {0x1282840?, 0xc000056ef0?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:12 +0x66
+main.(*application).Home(0xc000190078, {0x1284a00?, 0xc00015e000}, 0x102fa10?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:18 +0xb2
+net/http.HandlerFunc.ServeHTTP(0xc000073af0?, {0x1284a00?, 0xc00015e000?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1284a00, 0xc00015e000}, 0xc00014a000)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000771d0?}, {0x1284a00, 0xc00015e000}, 0xc00014a000)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc00018e140, {0x1284e40, 0xc00018a270})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+INFO	2022/10/07 23:41:09 LOGLOGLOGLOGLOG
+ERROR	2022/10/07 23:41:16 hanlders.go:18: SMTH HAPPEN TO SNIPPETS FETCH
+ERROR	2022/10/07 23:41:16 helpers.go:13: sql: expected 3 destination arguments in Scan, not 5
+goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc00009c000, {0xd04a20, 0xc0001a8000}, {0xd02860?, 0xc000056ea0?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:12 +0x66
+main.(*application).Home(0xc00009c000, {0xd04a20?, 0xc0001a8000}, 0xaafa10?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:19 +0x109
+net/http.HandlerFunc.ServeHTTP(0xc00006faf0?, {0xd04a20?, 0xc0001a8000?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0xd04a20, 0xc0001a8000}, 0xc0000b2100)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000942d0?}, {0xd04a20, 0xc0001a8000}, 0xc0000b2100)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000980a0, {0xd04e60, 0xc0000941e0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+INFO	2022/10/07 23:49:22 LOGLOGLOGLOGLOG
+ERROR	2022/10/07 23:49:31 hanlders.go:18: SMTH HAPPEN TO SNIPPETS FETCH
+ERROR	2022/10/07 23:49:31 helpers.go:13: sql: expected 3 destination arguments in Scan, not 5
+goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc00009c000, {0xe04a20, 0xc0001c4000}, {0xe02860?, 0xc00019e050?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:12 +0x66
+main.(*application).Home(0xc00009c000, {0xe04a20?, 0xc0001c4000}, 0xbafa10?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:19 +0x109
+net/http.HandlerFunc.ServeHTTP(0xc00006faf0?, {0xe04a20?, 0xc0001c4000?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0xe04a20, 0xc0001c4000}, 0xc0000b2100)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000942d0?}, {0xe04a20, 0xc0001c4000}, 0xc0000b2100)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000980a0, {0xe04e60, 0xc0000941e0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+INFO	2022/10/07 23:54:16 LOGLOGLOGLOGLOG
+ERROR	2022/10/07 23:54:34 hanlders.go:18: SMTH HAPPEN TO SNIPPETS FETCH
+ERROR	2022/10/07 23:54:34 helpers.go:13: sql: expected 3 destination arguments in Scan, not 5
+goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc000194000, {0xa54a20, 0xc0001de000}, {0xa52860?, 0xc000198100?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:12 +0x66
+main.(*application).Home(0xc000194000, {0xa54a20?, 0xc0001de000}, 0x7ffa90?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:19 +0x109
+net/http.HandlerFunc.ServeHTTP(0xc00006faf0?, {0xa54a20?, 0xc0001de000?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0xa54a20, 0xc0001de000}, 0xc0000ca000)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000771d0?}, {0xa54a20, 0xc0001de000}, 0xc0000ca000)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0001900a0, {0xa54e60, 0xc00018c1e0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+INFO	2022/10/07 23:56:52 LOGLOGLOGLOGLOG
+ERROR	2022/10/07 23:56:58 hanlders.go:18: SMTH HAPPEN TO SNIPPETS FETCH
+ERROR	2022/10/07 23:56:58 helpers.go:13: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM snippets WHERE expires > UTC_TIMESTAMP() ORDER BY id DESC LIMIT 10' at line 1
+goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc000194000, {0x7e4a40, 0xc0001dc000}, {0x7e28e0?, 0xc000098000?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:12 +0x66
+main.(*application).Home(0xc000194000, {0x7e4a40?, 0xc0001dc000}, 0x58fa90?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:19 +0x109
+net/http.HandlerFunc.ServeHTTP(0xc00006faf0?, {0x7e4a40?, 0xc0001dc000?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7e4a40, 0xc0001dc000}, 0xc00014a000)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000771d0?}, {0x7e4a40, 0xc0001dc000}, 0xc00014a000)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0001900a0, {0x7e4e80, 0xc00018c1e0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+ERROR	2022/10/07 23:57:03 hanlders.go:18: SMTH HAPPEN TO SNIPPETS FETCH
+ERROR	2022/10/07 23:57:03 helpers.go:13: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM snippets WHERE expires > UTC_TIMESTAMP() ORDER BY id DESC LIMIT 10' at line 1
+goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc000194000, {0x7e4a40, 0xc0001dc0e0}, {0x7e28e0?, 0xc0001940c0?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:12 +0x66
+main.(*application).Home(0xc000194000, {0x7e4a40?, 0xc0001dc0e0}, 0x58fa90?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:19 +0x109
+net/http.HandlerFunc.ServeHTTP(0xc00006faf0?, {0x7e4a40?, 0xc0001dc0e0?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7e4a40, 0xc0001dc0e0}, 0xc0000ae000)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000771d0?}, {0x7e4a40, 0xc0001dc0e0}, 0xc0000ae000)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0001900a0, {0x7e4e80, 0xc00018c1e0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+INFO	2022/10/07 23:57:48 LOGLOGLOGLOGLOG
+INFO	2022/10/08 22:58:38 LOGLOGLOGLOGLOG
+ERROR	2022/10/08 22:59:02 helpers.go:21: 
+ERROR	2022/10/08 22:59:08 helpers.go:21: 
+INFO	2022/10/08 22:59:29 LOGLOGLOGLOGLOG
+INFO	2022/10/08 23:06:20 LOGLOGLOGLOGLOG
+INFO	2022/10/08 23:07:09 LOGLOGLOGLOGLOG
+INFO	2022/10/08 23:07:20 LOGLOGLOGLOGLOG
+INFO	2022/10/08 23:07:31 hello from handlers
+INFO	2022/10/08 23:08:21 LOGLOGLOGLOGLOG
+INFO	2022/10/08 23:09:48 LOGLOGLOGLOGLOG
+INFO	2022/10/08 23:12:28 LOGLOGLOGLOGLOG
+ERROR	2022/10/08 23:12:35 helpers.go:13: model: no matching record found
+goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc000192000, {0xc39190, 0xc0001de000}, {0xc36b20?, 0xc000056300?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:12 +0x66
+main.(*application).ViewSnippet(0xc000192000, {0xc39190?, 0xc0001de000}, 0x8f0b50?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:71 +0x11c
+net/http.HandlerFunc.ServeHTTP(0xc000069af0?, {0xc39190?, 0xc0001de000?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0xc000182b53?, {0xc39190, 0xc0001de000}, 0xc00014a000)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000105440?}, {0xc39190, 0xc0001de000}, 0xc00014a000)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc00018e0a0, {0xc39620, 0xc00018a1e0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+INFO	2022/10/08 23:15:18 LOGLOGLOGLOGLOG
+ERROR	2022/10/08 23:15:24 helpers.go:13: model: no matching record found
+goroutine 9 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc0000081c8, {0x11891f0, 0xc0000b2000}, {0x1186b80?, 0xc000056300?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:12 +0x66
+main.(*application).ViewSnippet(0xc0000081c8, {0x11891f0?, 0xc0000b2000}, 0xe40b50?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:73 +0x15c
+net/http.HandlerFunc.ServeHTTP(0xc00006faf0?, {0x11891f0?, 0xc0000b2000?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0xc000096013?, {0x11891f0, 0xc0000b2000}, 0xc000190000)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000184030?}, {0x11891f0, 0xc0000b2000}, 0xc000190000)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000010e0, {0x1189680, 0xc0000775f0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+INFO	2022/10/08 23:15:51 LOGLOGLOGLOGLOG
+ERROR	2022/10/08 23:15:55 helpers.go:13: model: no matching record found
+goroutine 9 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc0000081c8, {0x1089210, 0xc0001b0000}, {0x1086ba0?, 0xc000056300?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:12 +0x66
+main.(*application).ViewSnippet(0xc0000081c8, {0x1089210?, 0xc0001b0000}, 0xd40b70?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:73 +0x15c
+net/http.HandlerFunc.ServeHTTP(0xc00006faf0?, {0x1089210?, 0xc0001b0000?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0xc000192013?, {0x1089210, 0xc0001b0000}, 0xc000190000)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000182030?}, {0x1089210, 0xc0001b0000}, 0xc000190000)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000001220, {0x10896a0, 0xc0000775f0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+INFO	2022/10/08 23:16:19 LOGLOGLOGLOGLOG
+ERROR	2022/10/08 23:16:25 helpers.go:13: model: no matching record found
+goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc000194000, {0x10c9210, 0xc0001de000}, {0x10c6ba0?, 0xc000056300?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:12 +0x66
+main.(*application).ViewSnippet(0xc000194000, {0x10c9210?, 0xc0001de000}, 0xd80b90?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:73 +0x15c
+net/http.HandlerFunc.ServeHTTP(0xc00006faf0?, {0x10c9210?, 0xc0001de000?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0xc000184b53?, {0x10c9210, 0xc0001de000}, 0xc0001b2100)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00018c2d0?}, {0x10c9210, 0xc0001de000}, 0xc0001b2100)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0001900a0, {0x10c96a0, 0xc00018c1e0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+INFO	2022/10/08 23:16:54 LOGLOGLOGLOGLOG
+ERROR	2022/10/08 23:17:00 helpers.go:13: sql: Scan called without calling Next
+goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc000194000, {0x799210, 0xc0001de000}, {0x796ba0?, 0xc000198130?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:12 +0x66
+main.(*application).ViewSnippet(0xc000194000, {0x799210?, 0xc0001de000}, 0x450b50?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:76 +0x190
+net/http.HandlerFunc.ServeHTTP(0xc00006faf0?, {0x799210?, 0xc0001de000?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0xc000184b53?, {0x799210, 0xc0001de000}, 0xc00014a000)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000077440?}, {0x799210, 0xc0001de000}, 0xc00014a000)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0001900a0, {0x7996a0, 0xc00018c1e0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+INFO	2022/10/08 23:17:32 LOGLOGLOGLOGLOG
+ERROR	2022/10/08 23:18:24 helpers.go:13: sql: Scan called without calling Next
+goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc000192000, {0x7b9250, 0xc000150000}, {0x7b6be0?, 0xc000056f70?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:12 +0x66
+main.(*application).ViewSnippet(0xc000192000, {0x7b9250?, 0xc000150000}, 0x470bd0?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:76 +0x190
+net/http.HandlerFunc.ServeHTTP(0xc000073af0?, {0x7b9250?, 0xc000150000?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0xc0000143b3?, {0x7b9250, 0xc000150000}, 0xc0001b0100)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00018a2d0?}, {0x7b9250, 0xc000150000}, 0xc0001b0100)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc00018e0a0, {0x7b96e0, 0xc00018a1e0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+ERROR	2022/10/08 23:18:27 helpers.go:13: sql: Scan called without calling Next
+goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc000192000, {0x7b9250, 0xc0000a6000}, {0x7b6be0?, 0xc000057010?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:12 +0x66
+main.(*application).ViewSnippet(0xc000192000, {0x7b9250?, 0xc0000a6000}, 0x470bd0?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:76 +0x190
+net/http.HandlerFunc.ServeHTTP(0xc000073af0?, {0x7b9250?, 0xc0000a6000?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0xc00008a013?, {0x7b9250, 0xc0000a6000}, 0xc00014a200)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00018a2d0?}, {0x7b9250, 0xc0000a6000}, 0xc00014a200)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc00018e0a0, {0x7b96e0, 0xc00018a1e0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+INFO	2022/10/08 23:18:49 LOGLOGLOGLOGLOG
+ERROR	2022/10/08 23:19:05 helpers.go:13: sql: Scan called without calling Next
+goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc00009c000, {0xb99230, 0xc000150000}, {0xb96bc0?, 0xc000056f80?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:12 +0x66
+main.(*application).ViewSnippet(0xc00009c000, {0xb99230?, 0xc000150000}, 0x850b50?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:76 +0x191
+net/http.HandlerFunc.ServeHTTP(0xc000073af0?, {0xb99230?, 0xc000150000?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0xc0000143b3?, {0xb99230, 0xc000150000}, 0xc00014a000)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000077440?}, {0xb99230, 0xc000150000}, 0xc00014a000)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000980a0, {0xb996c0, 0xc0000941e0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+ERROR	2022/10/08 23:19:10 helpers.go:13: sql: Scan called without calling Next
+goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc00009c000, {0xb99230, 0xc0001500e0}, {0xb96bc0?, 0xc00018a040?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:12 +0x66
+main.(*application).ViewSnippet(0xc00009c000, {0xb99230?, 0xc0001500e0}, 0x850b50?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:76 +0x191
+net/http.HandlerFunc.ServeHTTP(0xc000073af0?, {0xb99230?, 0xc0001500e0?}, 0x4?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0xc0000107f3?, {0xb99230, 0xc0001500e0}, 0xc00014a200)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000077440?}, {0xb99230, 0xc0001500e0}, 0xc00014a200)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000980a0, {0xb996c0, 0xc0000941e0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+ERROR	2022/10/08 23:19:12 helpers.go:13: sql: Scan called without calling Next
+goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc00009c000, {0xb99230, 0xc0000d4000}, {0xb96bc0?, 0xc00018a0e0?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:12 +0x66
+main.(*application).ViewSnippet(0xc00009c000, {0xb99230?, 0xc0000d4000}, 0x850b50?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:76 +0x191
+net/http.HandlerFunc.ServeHTTP(0xc000073af0?, {0xb99230?, 0xc0000d4000?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0xc00008cb53?, {0xb99230, 0xc0000d4000}, 0xc0001a4000)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000077440?}, {0xb99230, 0xc0000d4000}, 0xc0001a4000)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000980a0, {0xb996c0, 0xc0000941e0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+INFO	2022/10/08 23:19:50 LOGLOGLOGLOGLOG
+ERROR	2022/10/08 23:20:00 helpers.go:13: sql: Scan called without calling Next
+goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc00009c000, {0xcd9210, 0xc0001aa000}, {0xcd6ba0?, 0xc0001a8070?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:12 +0x66
+main.(*application).ViewSnippet(0xc00009c000, {0xcd9210?, 0xc0001aa000}, 0x990b50?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:76 +0x191
+net/http.HandlerFunc.ServeHTTP(0xc00006faf0?, {0xcd9210?, 0xc0001aa000?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0xc000182013?, {0xcd9210, 0xc0001aa000}, 0xc0000b2100)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000942d0?}, {0xcd9210, 0xc0001aa000}, 0xc0000b2100)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000980a0, {0xcd96a0, 0xc0000941e0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+ERROR	2022/10/08 23:20:01 helpers.go:13: sql: Scan called without calling Next
+goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc00009c000, {0xcd9210, 0xc0001aa0e0}, {0xcd6ba0?, 0xc000056f30?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:12 +0x66
+main.(*application).ViewSnippet(0xc00009c000, {0xcd9210?, 0xc0001aa0e0}, 0x990b50?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:76 +0x191
+net/http.HandlerFunc.ServeHTTP(0xc00006faf0?, {0xcd9210?, 0xc0001aa0e0?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0xc000182073?, {0xcd9210, 0xc0001aa0e0}, 0xc000186100)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000942d0?}, {0xcd9210, 0xc0001aa0e0}, 0xc000186100)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000980a0, {0xcd96a0, 0xc0000941e0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+INFO	2022/10/08 23:20:32 LOGLOGLOGLOGLOG
+INFO	2022/10/08 23:20:37 Display a specific snippet with ID 8...
+INFO	2022/10/08 23:30:32 LOGLOGLOGLOGLOG
+INFO	2022/10/08 23:30:58 Display a specific snippet with ID 8...
+INFO	2022/10/08 23:31:09 Display a specific snippet with ID 8...
+INFO	2022/10/08 23:31:27 LOGLOGLOGLOGLOG
+INFO	2022/10/08 23:31:31 Display a specific snippet with ID 8...
+INFO	2022/10/09 00:01:22 LOGLOGLOGLOGLOG
+INFO	2022/10/09 00:01:31 Display a specific snippet with ID 8...
+INFO	2022/10/09 00:02:02 LOGLOGLOGLOGLOG
+INFO	2022/10/09 00:02:07 Display a specific snippet with ID 8...
+INFO	2022/10/09 00:02:28 LOGLOGLOGLOGLOG
+INFO	2022/10/09 00:02:36 Display a specific snippet with ID 8...
+INFO	2022/10/09 00:03:25 LOGLOGLOGLOGLOG
+INFO	2022/10/09 00:03:29 Display a specific snippet with ID 8...
+INFO	2022/10/09 00:03:46 LOGLOGLOGLOGLOG
+INFO	2022/10/09 00:03:50 Display a specific snippet with ID 8...
+INFO	2022/10/09 00:11:51 LOGLOGLOGLOGLOG
+INFO	2022/10/09 00:11:58 hello from handlers
+INFO	2022/10/09 00:12:00 Display a specific snippet with ID 10...
+INFO	2022/10/09 00:12:07 Display a specific snippet with ID 9...
+INFO	2022/10/09 00:37:37 LOGLOGLOGLOGLOG
+INFO	2022/10/09 00:37:51 Display a specific snippet with ID 10...
+INFO	2022/10/09 15:37:06 LOGLOGLOGLOGLOG
+ERROR	2022/10/09 15:37:53 helpers.go:13: the page home.tmpl does not exist
+goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc00018c020, {0xfdb5f0, 0xc0000b0000}, {0xfd8f80?, 0xc0000ae080?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:12 +0x66
+main.(*application).render(0xc00018c020, {0xfdb5f0, 0xc0000b0000}, 0xc00008a004?, {0xf3b320, 0x9}, 0xc00018a180?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:37 +0x165
+main.(*application).Home(0xc00018c020, {0xfdb5f0, 0xc0000b0000}, 0xc9de30?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:26 +0x117
+net/http.HandlerFunc.ServeHTTP(0xc00006faf0?, {0xfdb5f0?, 0xc0000b0000?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0xfdb5f0, 0xc0000b0000}, 0xc000160000)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000077860?}, {0xfdb5f0, 0xc0000b0000}, 0xc000160000)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0001c6000, {0xfdba80, 0xc0001822d0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+INFO	2022/10/09 15:39:04 LOGLOGLOGLOGLOG
+INFO	2022/10/09 16:41:07 LOGLOGLOGLOGLOG
+ERROR	2022/10/09 16:41:17 helpers.go:14: template: base.tmpl:21:19: executing "base" at <.Snippet.CurrentYear>: can't evaluate field CurrentYear in type *models.Snippet
+goroutine 36 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc000096100, {0xe9b630, 0xc000164000}, {0xe99ee0?, 0xc000058a60?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:13 +0x66
+main.(*application).render(0xc000096100, {0xe9b630, 0xc000164000}, 0xc00000ed34?, {0xdfb360, 0x9}, 0xc000092440?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:45 +0xe7
+main.(*application).Home(0xc000096100, {0xe9b630, 0xc000164000}, 0xc00009e300)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:25 +0x125
+net/http.HandlerFunc.ServeHTTP(0xc000073af0?, {0xe9b630?, 0xc000164000?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0xe9b630, 0xc000164000}, 0xc00009e300)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008ad50?}, {0xe9b630, 0xc000164000}, 0xc00009e300)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000ce000, {0xe9bac0, 0xc00008ac60})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+ERROR	2022/10/09 16:41:17 server.go:3228: http: superfluous response.WriteHeader call from main.(*application).serverError (helpers.go:15)
+ERROR	2022/10/09 16:43:05 helpers.go:14: template: base.tmpl:21:19: executing "base" at <.Snippet.CurrentYear>: can't evaluate field CurrentYear in type *models.Snippet
+goroutine 36 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc000096100, {0xe9b630, 0xc0001bc000}, {0xe99ee0?, 0xc00018c260?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:13 +0x66
+main.(*application).render(0xc000096100, {0xe9b630, 0xc0001bc000}, 0xc000190074?, {0xdfb360, 0x9}, 0xc000092440?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:45 +0xe7
+main.(*application).Home(0xc000096100, {0xe9b630, 0xc0001bc000}, 0xc000158200)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:25 +0x125
+net/http.HandlerFunc.ServeHTTP(0xc000073af0?, {0xe9b630?, 0xc0001bc000?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0xe9b630, 0xc0001bc000}, 0xc000158200)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008ad50?}, {0xe9b630, 0xc0001bc000}, 0xc000158200)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000ce000, {0xe9bac0, 0xc00008ac60})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+ERROR	2022/10/09 16:43:05 server.go:3228: http: superfluous response.WriteHeader call from main.(*application).serverError (helpers.go:15)
+ERROR	2022/10/09 16:43:06 helpers.go:14: template: base.tmpl:21:19: executing "base" at <.Snippet.CurrentYear>: can't evaluate field CurrentYear in type *models.Snippet
+goroutine 36 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc000096100, {0xe9b630, 0xc0000de000}, {0xe99ee0?, 0xc00018c440?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:13 +0x66
+main.(*application).render(0xc000096100, {0xe9b630, 0xc0000de000}, 0xc000098404?, {0xdfb360, 0x9}, 0xc000092440?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:45 +0xe7
+main.(*application).Home(0xc000096100, {0xe9b630, 0xc0000de000}, 0xc000198200)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:25 +0x125
+net/http.HandlerFunc.ServeHTTP(0xc000073af0?, {0xe9b630?, 0xc0000de000?}, 0x0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0xe9b630, 0xc0000de000}, 0xc000198200)
+	D:/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008ad50?}, {0xe9b630, 0xc0000de000}, 0xc000198200)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000ce000, {0xe9bac0, 0xc00008ac60})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+ERROR	2022/10/09 16:43:06 server.go:3228: http: superfluous response.WriteHeader call from main.(*application).serverError (helpers.go:15)
+INFO	2022/10/09 16:43:11 LOGLOGLOGLOGLOG
+INFO	2022/10/09 16:59:16 LOGLOGLOGLOGLOG
+INFO	2022/10/09 17:00:05 Display a specific snippet with ID 10...
+INFO	2022/10/09 17:00:41 LOGLOGLOGLOGLOG
+INFO	2022/10/09 17:00:50 Display a specific snippet with ID 10...
+INFO	2022/10/09 20:09:57 LOGLOGLOGLOGLOG
+INFO	2022/10/09 20:10:09 Display a specific snippet with ID 10...
+INFO	2022/10/09 21:43:03 LOGLOGLOGLOGLOG
+INFO	2022/10/09 22:27:15 LOGLOGLOGLOGLOG
+INFO	2022/10/09 22:27:27 [::1]:50437 - HTTP/1.1 GET /
+INFO	2022/10/09 22:27:49 [::1]:50437 - HTTP/1.1 GET /snippet/view/?id=8
+INFO	2022/10/09 22:27:49 Display a specific snippet with ID 8...
+INFO	2022/10/12 15:06:15 LOGLOGLOGLOGLOG
+ERROR	2022/10/12 20:59:00 main.go:51: failed to connect to `host=localhost user=admin database=postgres`: failed SASL auth (�����: ������������ "admin" �� ������ �������� ����������� (�� ������) (SQLSTATE 28P01))
+INFO	2022/10/12 20:59:00 LOGLOGLOGLOGLOG
+INFO	2022/10/12 21:00:06 LOGLOGLOGLOGLOG
+INFO	2022/10/12 21:00:29 [::1]:51428 - HTTP/1.1 GET /
+INFO	2022/10/12 21:00:30 [::1]:59863 - HTTP/1.1 GET /snippet/view?id=1
+INFO	2022/10/12 21:00:30 [::1]:59863 - HTTP/1.1 GET /snippet/view/?id=1
+ERROR	2022/10/12 21:00:30 helpers.go:14: ОШИБКА: ошибка синтаксиса в конце (SQLSTATE 42601)
+goroutine 37 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc000098220, {0x9e97e8, 0xc000166380}, {0x9e5540?, 0xc0001881e0?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:13 +0x66
+main.(*application).ViewSnippet(0xc000098220, {0x9e97e8, 0xc000166380}, 0xc00019e100)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:63 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x0?, {0x9e97e8?, 0xc000166380?}, 0x4?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x8e27c0?, {0x9e97e8, 0xc000166380}, 0xc00019e100)
+	D:/Go/src/net/http/server.go:2487 +0x149
+main.secureHeader.func1({0x9e97e8, 0xc000166380}, 0x4?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/middlewares.go:13 +0x3af
+net/http.HandlerFunc.ServeHTTP(0xc0000722d0?, {0x9e97e8?, 0xc000166380?}, 0xc000103990?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+main.(*application).logRequest.func1({0x9e97e8, 0xc000166380}, 0xc00019e100)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/middlewares.go:20 +0x182
+net/http.HandlerFunc.ServeHTTP(0x8e27c0?, {0x9e97e8?, 0xc000166380?}, 0x10?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+main.secureHeader.func1({0x9e97e8, 0xc000166380}, 0x2233b2dbe00?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/middlewares.go:13 +0x3af
+net/http.HandlerFunc.ServeHTTP(0xc000022793?, {0x9e97e8?, 0xc000166380?}, 0x433f95?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.serverHandler.ServeHTTP({0xc00029a1e0?}, {0x9e97e8, 0xc000166380}, 0xc00019e100)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc00023a000, {0x9e9f30, 0xc00008eff0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+INFO	2022/10/12 21:00:30 [::1]:59863 - HTTP/1.1 GET /favicon.ico
+INFO	2022/10/12 21:00:32 [::1]:59863 - HTTP/1.1 GET /snippet/view?id=2
+INFO	2022/10/12 21:00:32 [::1]:59863 - HTTP/1.1 GET /snippet/view/?id=2
+ERROR	2022/10/12 21:00:32 helpers.go:14: ОШИБКА: ошибка синтаксиса в конце (SQLSTATE 42601)
+goroutine 37 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc000098220, {0x9e97e8, 0xc000246000}, {0x9e5540?, 0xc00024a0f0?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:13 +0x66
+main.(*application).ViewSnippet(0xc000098220, {0x9e97e8, 0xc000246000}, 0xc000216300)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:63 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x0?, {0x9e97e8?, 0xc000246000?}, 0x4?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x8e27c0?, {0x9e97e8, 0xc000246000}, 0xc000216300)
+	D:/Go/src/net/http/server.go:2487 +0x149
+main.secureHeader.func1({0x9e97e8, 0xc000246000}, 0x4?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/middlewares.go:13 +0x3af
+net/http.HandlerFunc.ServeHTTP(0xc0000722d0?, {0x9e97e8?, 0xc000246000?}, 0xc000103990?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+main.(*application).logRequest.func1({0x9e97e8, 0xc000246000}, 0xc000216300)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/middlewares.go:20 +0x182
+net/http.HandlerFunc.ServeHTTP(0x8e27c0?, {0x9e97e8?, 0xc000246000?}, 0x10?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+main.secureHeader.func1({0x9e97e8, 0xc000246000}, 0x2233b383170?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/middlewares.go:13 +0x3af
+net/http.HandlerFunc.ServeHTTP(0xc000224093?, {0x9e97e8?, 0xc000246000?}, 0x433f95?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.serverHandler.ServeHTTP({0xc00029a1e0?}, {0x9e97e8, 0xc000246000}, 0xc000216300)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc00023a000, {0x9e9f30, 0xc00008eff0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+INFO	2022/10/12 21:00:40 [::1]:58588 - HTTP/1.1 GET /snippet/view/?id=1
+ERROR	2022/10/12 21:00:40 helpers.go:14: ОШИБКА: ошибка синтаксиса в конце (SQLSTATE 42601)
+goroutine 28 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc000098220, {0x9e97e8, 0xc0002460e0}, {0x9e5540?, 0xc00024a3c0?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:13 +0x66
+main.(*application).ViewSnippet(0xc000098220, {0x9e97e8, 0xc0002460e0}, 0xc000216600)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:63 +0x17d
+net/http.HandlerFunc.ServeHTTP(0x0?, {0x9e97e8?, 0xc0002460e0?}, 0x4?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x8e27c0?, {0x9e97e8, 0xc0002460e0}, 0xc000216600)
+	D:/Go/src/net/http/server.go:2487 +0x149
+main.secureHeader.func1({0x9e97e8, 0xc0002460e0}, 0x4?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/middlewares.go:13 +0x3af
+net/http.HandlerFunc.ServeHTTP(0xc0000722d0?, {0x9e97e8?, 0xc0002460e0?}, 0xc0000df990?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+main.(*application).logRequest.func1({0x9e97e8, 0xc0002460e0}, 0xc000216600)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/middlewares.go:20 +0x182
+net/http.HandlerFunc.ServeHTTP(0x8e27c0?, {0x9e97e8?, 0xc0002460e0?}, 0x10?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+main.secureHeader.func1({0x9e97e8, 0xc0002460e0}, 0x2233b383170?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/middlewares.go:13 +0x3af
+net/http.HandlerFunc.ServeHTTP(0xc0002240f3?, {0x9e97e8?, 0xc0002460e0?}, 0x433f95?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.serverHandler.ServeHTTP({0xc000202fc0?}, {0x9e97e8, 0xc0002460e0}, 0xc000216600)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000d6320, {0x9e9f30, 0xc00008eff0})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+INFO	2022/10/12 21:07:09 LOGLOGLOGLOGLOG
+INFO	2022/10/12 21:07:16 [::1]:60667 - HTTP/1.1 GET /
+INFO	2022/10/12 21:07:18 [::1]:60667 - HTTP/1.1 GET /snippet/view/?id=1
+INFO	2022/10/12 21:07:18 Display a specific snippet with ID 1...
+INFO	2022/10/12 21:13:31 [::1]:62164 - HTTP/1.1 GET /
+INFO	2022/10/12 21:44:23 [::1]:63897 - HTTP/1.1 GET /
+INFO	2022/10/12 21:44:25 [::1]:63897 - HTTP/1.1 GET /snippet/view/?id=1
+INFO	2022/10/12 21:44:25 Display a specific snippet with ID 1...
+INFO	2022/10/12 21:45:24 [::1]:64525 - HTTP/1.1 GET /snippet/view/?id=1
+INFO	2022/10/12 21:45:24 Display a specific snippet with ID 1...
+INFO	2022/10/12 21:45:27 [::1]:64525 - HTTP/1.1 GET /
+INFO	2022/10/12 23:40:16 LOGLOGLOGLOGLOG
+INFO	2022/10/12 23:40:49 [::1]:50162 - HTTP/1.1 GET /
+INFO	2022/10/12 23:40:51 [::1]:50162 - HTTP/1.1 GET /snippet/view/1
+INFO	2022/10/12 23:40:51 Display a specific snippet with ID 1...
+INFO	2022/10/12 23:40:57 [::1]:50162 - HTTP/1.1 GET /snippet/view/2
+INFO	2022/10/12 23:40:57 Display a specific snippet with ID 2...
+INFO	2022/10/12 23:42:37 [::1]:50162 - HTTP/1.1 GET /snippet/view/1
+INFO	2022/10/12 23:42:37 Display a specific snippet with ID 1...
+INFO	2022/10/12 23:42:38 [::1]:50162 - HTTP/1.1 GET /
+INFO	2022/10/12 23:43:14 [::1]:50162 - HTTP/1.1 GET /snippet/view/?id=2
+INFO	2022/10/12 23:43:17 [::1]:50162 - HTTP/1.1 GET /snippet/view/2
+INFO	2022/10/12 23:43:17 Display a specific snippet with ID 2...
+INFO	2022/10/12 23:43:21 [::1]:50162 - HTTP/1.1 GET /snippet/view/99
+ERROR	2022/10/12 23:43:21 helpers.go:14: no rows in result set
+goroutine 20 [running]:
+runtime/debug.Stack()
+	D:/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc000204080, {0xac0048, 0xc0000e6620}, {0xabbca0?, 0xc000064f20?})
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/helpers.go:13 +0x66
+main.(*application).ViewSnippet(0xc000204080, {0xac0048, 0xc0000e6620}, 0xc000118900)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/hanlders.go:74 +0x21c
+net/http.HandlerFunc.ServeHTTP(0xac06e8?, {0xac0048?, 0xc0000e6620?}, 0xe09fa0?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+github.com/julienschmidt/httprouter.(*Router).Handler.func1({0xac0048?, 0xc0000e6620?}, 0xc000118800?, {0xc000067d60?, 0x0?, 0xac000000005774a0?})
+	D:/Go/pkg/mod/github.com/julienschmidt/httprouter@v1.3.0/router.go:275 +0x196
+github.com/julienschmidt/httprouter.(*Router).ServeHTTP(0xc0002222a0, {0xac0048, 0xc0000e6620}, 0xc000118800)
+	D:/Go/pkg/mod/github.com/julienschmidt/httprouter@v1.3.0/router.go:387 +0x81c
+main.secureHeader.func1({0xac0048, 0xc0000e6620}, 0x4?)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/middlewares.go:13 +0x3af
+net/http.HandlerFunc.ServeHTTP(0xc0000722d0?, {0xac0048?, 0xc0000e6620?}, 0xc000275a50?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+main.(*application).logRequest.func1({0xac0048, 0xc0000e6620}, 0xc000118800)
+	D:/kartoteka/проекты/go/FirstApp/cmd/web/middlewares.go:20 +0x182
+net/http.HandlerFunc.ServeHTTP(0x0?, {0xac0048?, 0xc0000e6620?}, 0x503f95?)
+	D:/Go/src/net/http/server.go:2109 +0x2f
+net/http.serverHandler.ServeHTTP({0xc000112060?}, {0xac0048, 0xc0000e6620}, 0xc000118800)
+	D:/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000254000, {0xac0790, 0xc000206420})
+	D:/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3102 +0x4db
+
+INFO	2022/10/12 23:43:24 [::1]:50162 - HTTP/1.1 GET /snippet/view/2
+INFO	2022/10/12 23:43:24 Display a specific snippet with ID 2...
+INFO	2022/10/12 23:46:53 [::1]:50162 - HTTP/1.1 GET /snippet/create
+INFO	2022/10/12 23:47:03 [::1]:50162 - HTTP/1.1 GET /
+INFO	2022/10/13 00:07:22 LOGLOGLOGLOGLOG
+INFO	2022/10/13 00:07:32 [::1]:54968 - HTTP/1.1 GET /
+INFO	2022/10/13 00:07:35 [::1]:54968 - HTTP/1.1 GET /snippet/create
+INFO	2022/10/13 00:17:49 LOGLOGLOGLOGLOG
+INFO	2022/10/13 00:17:55 [::1]:62299 - HTTP/1.1 GET /snippet/create
+ERROR	2022/10/13 00:17:55 helpers.go:22: strconv.Atoi: parsing "": invalid syntax
+INFO	2022/10/13 00:17:56 [::1]:62299 - HTTP/1.1 GET /snippet/create
+ERROR	2022/10/13 00:17:56 helpers.go:22: strconv.Atoi: parsing "": invalid syntax
+INFO	2022/10/13 00:18:40 LOGLOGLOGLOGLOG
+INFO	2022/10/13 00:18:47 [::1]:49649 - HTTP/1.1 GET /snippet/create
+INFO	2022/10/13 00:19:00 [::1]:49649 - HTTP/1.1 POST /snippet/create
+ERROR	2022/10/13 00:19:00 helpers.go:22: strconv.Atoi: parsing "": invalid syntax
+INFO	2022/10/13 00:25:25 LOGLOGLOGLOGLOG
