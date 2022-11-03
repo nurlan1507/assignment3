@@ -42,7 +42,7 @@ func main() {
 	}
 	defer file.Close()
 	//logs
-	infoLog := log.New(file, "INFO\t", log.Ldate|log.Ltime)
+	infoLog := log.New(file, "INFO	\t", log.Ldate|log.Ltime)
 	errorLog := log.New(file, "ERROR\t", log.Ldate|log.Ltime|log.Lshortfile)
 	//database connection
 	//db, err := OpenDb(cfg.dsn)

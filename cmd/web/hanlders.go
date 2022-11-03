@@ -46,13 +46,8 @@ func (app *application) SnippetCreatePost(w http.ResponseWriter, r *http.Request
 	//}
 	title := r.PostForm.Get("title")
 	content := r.PostForm.Get("content")
-	expires, err := strconv.Atoi(r.PostForm.Get("expires"))
-	if err != nil {
-		app.clientError(w, 400, err.Error())
-		return
-	}
 
-	newSnippet, err := app.snippets.Insert(title, content, expires)
+	newSnippet, err := app.snippets.Insert(title, content, 5)
 	if err != nil {
 		app.serverError(w, err)
 		return

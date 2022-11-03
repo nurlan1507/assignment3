@@ -21,13 +21,12 @@ type SnippetModel struct {
 }
 
 func (m *SnippetModel) Insert(title string, content string, expires int) (*Snippet, error) {
-	stmt := `INSERT INTO snippets(title,content, created,expires) VALUES ($1,$2,current_date, current_date +'$3 year' )`
-	query, err := m.Db.Query(context.Background(), stmt, title, content, expires)
-	if err != nil {
-		return nil, ErrNoRecord
-	}
+	expiresAt := time.Now().UTC().Add(time.Duration(expires))
+
+	stmt := `INSERT INTO snippets(title,content, created,expires) VALUES ($1,$2,current_date, $3 )`
+	query := m.Db.QueryRow(context.Background(), stmt, title, content, expiresAt)
 	snippet := &Snippet{}
-	err = query.Scan(&snippet.ID, &snippet.Title, &snippet.Content, &snippet.Created, &snippet.Expires)
+	err := query.Scan(&snippet.ID, &snippet.Title, &snippet.Content, &snippet.Created, &snippet.Expires)
 	if err != nil {
 		if errors.Is(err, sql.ErrNoRows) {
 			return nil, ErrNoRecord
@@ -41,6 +40,7 @@ func (m *SnippetModel) Get(id int) (*Snippet, error) {
 	stmt := `SELECT * FROM snippets s WHERE id= $1`
 	result := m.Db.QueryRow(context.Background(), stmt, id)
 	s := &Snippet{}
+	
 	err := result.Scan(&s.ID, &s.Title, &s.Content, &s.Created, &s.Expires)
 	if err != nil {
 		if errors.Is(err, sql.ErrNoRows) {
@@ -51,7 +51,9 @@ func (m *SnippetModel) Get(id int) (*Snippet, error) {
 	return s, nil
 }
 
+
 func (m *SnippetModel) Latest() ([]*Snippet, error) {
+	
 	stmt := `SELECT * FROM snippets s WHERE current_date < s.expires limit 10`
 	result, err := m.Db.Query(context.Background(), stmt)
 	if err != nil {
